@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topbar" />
+        
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:layout_weight="0.84" >
+
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/myBaoxiao"
+                style="@style/main_btn_style"
+                android:drawableTop="@drawable/baoxiao_btn_bg"
+                android:text="我的报销" />
+
+          	<RadioButton
+          	    android:id="@+id/report"
+          	    style="@style/main_btn_style"
+          	    android:text="报表统计"
+          	    android:drawableTop="@drawable/report_btn_bg"/>
+
+            <RadioButton
+                android:id="@+id/setting"
+                style="@style/main_btn_style"
+                android:text="应用设置"
+                android:drawableTop="@drawable/setting_btn_bg"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>
