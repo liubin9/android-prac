@@ -16,7 +16,7 @@ import com.bxd.view.XListView;
 import com.bxd.view.XListView.IXListViewListener;
 
 /**
- * @author <a href="mailto:liubin9@asiainfo.com">Bin.Lau</a>
+ * @author <a href="mailto:liubinyesman@gmail.com">Bin.Lau</a>
  * @description 通过XListView组件的方式实现下拉刷新效果
  * @version 1.0
  */

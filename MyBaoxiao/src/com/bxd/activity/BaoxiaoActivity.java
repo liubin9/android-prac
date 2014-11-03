@@ -20,7 +20,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 /**
- * @author <a href="mailto:liubin9@asiainfo.com">Bin.Lau</a>
+ * @author <a href="mailto:liubinyesman@gmail.com">Bin.Lau</a>
  * @description 通过PullToRefreshListView组件的方式实现下拉刷新效果
  * @version 1.0
  */
