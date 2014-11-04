@@ -32,15 +32,15 @@ public class BaoxiaoActivity extends Activity {
     private String[] serialValues = new String[] { "123123", "23455", "34456",
             "5677" };
 
-    private String[] amountValues = new String[] { "300", "400", "500", "600" };
+    private String[] amountValues = new String[] { "￥300", "￥400", "￥500", "￥600" };
 
     private String[] feeTypesValues = new String[] { "手机费用", "日常零星费用", "差旅费",
             "交通费" };
 
     String[] mapkey = new String[] { "serial", "amount", "feeType" };
 
-    int[] componetKey = new int[] { R.id.serialText, R.id.amount,
-            R.id.feeTypeText };
+    int[] componetKey = new int[] { R.id.serialValue, R.id.amount,
+            R.id.feeTypeValue };
 
     List<Map<String, Object>> maps;
 
@@ -86,7 +86,7 @@ public class BaoxiaoActivity extends Activity {
                     protected void onPostExecute(Object result) {
                         Map<String, Object> listItem = new HashMap<String, Object>();
                         listItem.put("serial", "shalala"+ DateUtils.formatDate(new Date(), "HH:mm:ss") );
-                        listItem.put("amount", "120");
+                        listItem.put("amount", "￥120");
                         listItem.put("feeType", "交通费");
                         maps.add(0,listItem);
                         
